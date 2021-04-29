@@ -29,9 +29,18 @@ pointer = &normalVariable // pointer holds the address of normalVariable
 */
 ```
 
+*obs: The address which the pointer holds can only be of a variable with the same type of the pointer.
+
 If we don't want to work anymore with our pointer, we can free it with the function free() or even saying that the pointer will not point to anywhere(NULL).
 
 ```C
 free(pointer);
 // or pointer = NULL;
 ```
+
+### Operations with pointers
+
+We can only sum and subtracts integer values from the pointers. However, this operations
+respects the size of the type of the variables which the pointer points. Because of this, any operation made with a pointer like: pointer = pointer +- n, n is an integer, will be interpreted like: address = address +- n * sizeof(pointer_type), address is the address of the variable which the pointer points. 
+
+Furthermore, we can compare the address hold by pointers using comparison operators: ==, !=, >, <, >=, <=.
