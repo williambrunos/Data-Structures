@@ -25,6 +25,10 @@ void mm(int *array, int *min, int *max, int size) {
       *max = array[i];
     }
   }
+
+  free(array);
+  free(min);
+  free(max);
 }
 
 void hm(int *mnts, int *h, int *m) {
