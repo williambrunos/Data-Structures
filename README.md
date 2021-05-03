@@ -104,3 +104,20 @@ create dynamic matrices!
 ```C
 dataType *arrayName[size];
 ```
+
+### Pointers for pointers
+
+In C, we can make arbitrary pointers for pointers, which ones the number of '*' 
+on its declarations represents the number of levels of the pointer.
+
+```C
+int x = 10;
+int *intPtr = &x;
+int **intPtrPtr = &intPtr;
+int ***intPtrPtrPtr = &intPtrPtr;
+
+printf("intPtrPtrPtr = %d \n", intPtrPtrPtr); // &intPtrPtr
+printf("*intPtrPtrPtr = %d \n", *intPtrPtrPtr); // &intPtr
+printf("**intPtrPtrPtr = %d \n", **intPtrPtrPtr); // &x
+printf("***intPtrPtrPtr = %d \n", ***intPtrPtrPtr); // x
+```
