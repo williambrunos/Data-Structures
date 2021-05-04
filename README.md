@@ -121,3 +121,12 @@ printf("*intPtrPtrPtr = %d \n", *intPtrPtrPtr); // &intPtr
 printf("**intPtrPtrPtr = %d \n", **intPtrPtrPtr); // &x
 printf("***intPtrPtrPtr = %d \n", ***intPtrPtrPtr); // x
 ```
+
+### Algorithms Complexity
+
+This term, "complexity", is nothing more than the analysis of the resources needed
+by the algorithm to run. This resources are: memory and CPU, as you have known,
+a code needs memory to store the variables and CPU for processing the data,
+
+This notation is an approximation, just to let us analyse how the algorithm consume
+resources of the computer as the length of the input raises.
