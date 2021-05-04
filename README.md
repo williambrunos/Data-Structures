@@ -130,3 +130,6 @@ a code needs memory to store the variables and CPU for processing the data,
 
 This notation is an approximation, just to let us analyse how the algorithm consume
 resources of the computer as the length of the input raises.
+
+* Spacial complexity => Measure how much memory the algorithm needs
+* Temporal complexity => Measure how much processing time the algorithm needs.
