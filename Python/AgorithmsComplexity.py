@@ -43,8 +43,3 @@ def haveDuplicateValuesSecondOption(list):
         return True
   
   return False
-    
-myList = [1, 4, 2, 3]
-print(haveDuplicateValues(myList))
-    
-  
