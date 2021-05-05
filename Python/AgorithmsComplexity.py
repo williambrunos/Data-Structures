@@ -1,5 +1,5 @@
-# Spacial complexity => 4 + N
-# Temporal complexity => 2 + 4 * (N/2) = 2 + 2 * N => 2*N => O(N)
+# Location complexity => 4 + N
+# Time complexity => 2 + 4 * (N/2) = 2 + 2 * N => 2*N => O(N)
 
 def invertList(list):
   N = len(list)
@@ -11,8 +11,8 @@ def invertList(list):
     
   return list
 
-# Spacial complexity => 2 + 2 * N
-# Temporal complexity => 2 + N => N => O(N)
+# Location complexity => 2 + 2 * N
+# Time complexity => 2 + N => N => O(N)
 
 def secondInvertList(list):
   invertedList = []
@@ -22,8 +22,8 @@ def secondInvertList(list):
     
   return invertedList
 
-# Spacial Complexity => 2 + N
-# Temporal Complexity => 2 + 2 * N => O(N) 
+# Location Complexity => 2 + N
+# Time Complexity => 2 + 2 * N => O(N) 
 
 def haveDuplicateValues(list):
   N = len(list)
@@ -33,8 +33,8 @@ def haveDuplicateValues(list):
   
   return False
 
-# Temporal Complexity => N - 1 + N - 2 + ... + 1 => N*(N)/2 => O(N²)
-# Spacial Complexity => 2 + N
+# Time Complexity => N - 1 + N - 2 + ... + 1 => N*(N)/2 => O(N²)
+# Location Complexity => 2 + N
 
 def haveDuplicateValuesSecondOption(list):
   for i in range(len(list)-1):

@@ -131,8 +131,8 @@ a code needs memory to store the variables and CPU for processing the data,
 This notation is an approximation, just to let us analyse how the algorithm consume
 resources of the computer as the length of the input raises.
 
-* Spacial complexity => Measure how much memory the algorithm needs
-* Temporal complexity => Measure how much processing time the algorithm needs.
+* Location complexity => Measure how much memory the algorithm needs
+* Time complexity => Measure how much processing time the algorithm needs.
 
 ### Abstract Data Type(ADT)
 
@@ -161,3 +161,16 @@ access to the functions prototypes. Like this:
 ```C
 #include "name_of_the_archive.h"
 ```
+
+### Sequency Allocated List:
+
+Is a common list, declared and created in memory with values in sequencial
+position, accessed by the first one and the data types. In python, as we can
+store data with different data types, we store all them as pointers, with the
+"pointer" type, and use them to access these values.
+
+* Element adding: In a list, when we add an element in it, the computer will "push"
+the others to the left to fill the list => Time Complexity: O(n)
+
+* Element removing: When we remove an element on some index, the computer will
+"pull" the others to the left to fill the list => Time Complexity: O(n)
