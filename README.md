@@ -142,3 +142,22 @@ as in C as in Python. But, what are these ADT's? ADT's are collections of data
 and functions in one unique data structure. For these ADT's, the data is encapsuled,
 which means that we can add, remove or even have access to the content of the data
 with functions.
+
+In C, the default method to implement a ADT is:
+
+* Create an archive with .h extension and declare the prototypes of the functions
+of the struct.
+
+* Create an archive with .c extension with the same name of the .h and declare
+the struct and construct the functions that had been declared yet in the .h 
+archive.
+
+* Create an archive with .c extension to implement the structs and functions of
+the other archives.
+
+* obs: It's important to include the .h archive in the others .c files to have 
+access to the functions prototypes. Like this:
+
+```C
+#include "name_of_the_archive.h"
+```
