@@ -133,3 +133,12 @@ resources of the computer as the length of the input raises.
 
 * Spacial complexity => Measure how much memory the algorithm needs
 * Temporal complexity => Measure how much processing time the algorithm needs.
+
+### Abstract Data Type(ADT)
+
+On our course of Data Structures, we will have to create our own structs of data,
+as in C as in Python. But, what are these ADT's? ADT's are collections of data
+(variables) with a logical connection among them. We store an amount of variables
+and functions in one unique data structure. For these ADT's, the data is encapsuled,
+which means that we can add, remove or even have access to the content of the data
+with functions.
