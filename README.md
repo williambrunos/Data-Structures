@@ -174,3 +174,26 @@ the others to the left to fill the list => Time Complexity: O(n)
 
 * Element removing: When we remove an element on some index, the computer will
 "pull" the others to the left to fill the list => Time Complexity: O(n)
+
+
+### Linked List
+
+In a linked list, the data is not sequency allocated in memory, it is scattered
+in the RAM memory. How do these data can have access to each other? Through 
+some structures named **Nodes**. Nodes are structures that holds the data we want
+to store and a variable that points to the next Node.
+
+So, the code of this structure is simple, because all of the manipulations in the
+linked list will be done by another class, the list itself.
+
+- Code in Python for the Node Structure
+
+```Python
+class Node:
+  def __init__(self, data):
+    self.data = data
+    self.next = None
+```
+
+At the initialization of a node, we don't have to initialize the variable next,
+since we don't have another node(yet) to link it.
