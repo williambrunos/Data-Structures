@@ -1,13 +1,9 @@
 from node import Node
+from linkedList import LinkedList
 
-node1 = Node(5)
-node2 = Node(10)
-print(node1.data)
-print(node1.next)
+lista = LinkedList()
+lista.append(8)
+lista.append(56)
 
-node1.next = node2 
-# Returns an object and its memory address
-print(node1.next)
-# Returns the value of data hold by the object on the
-# attribute "next"
-print(node1.next.data)
+print(lista[0])
+print(lista.index(5))

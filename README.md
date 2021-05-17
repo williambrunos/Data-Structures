@@ -197,3 +197,29 @@ class Node:
 
 At the initialization of a node, we don't have to initialize the variable next,
 since we don't have another node(yet) to link it.
+
+### Adding elements at the end of the list
+
+In this algorithm we have two cases:
+
+* The list is empty so we can just put the data in the head(first node) of the list
+* The list is not empty, and we have to search throughout all the list until we
+find the last node and put the data given as a parameter in the next node
+
+In the worst case, the time complexity of the "append" function is O(n), 'n' is 
+the length of the linked list at some point.
+
+### Getting some data from the list
+
+We pass as argument an index which one we will get the element at it on the list.
+The variable "pointer" will go through all the list, and at the point given as
+argument, it will stop and return the data of the pointer.next at that point.
+
+* Time complexity of this algorithm is O(n), as n is the list length
+
+### Setting some data at an index of the list
+
+In this algorithm, at the worst case, we have a O(n) situation. Our variable
+pointer will go trough all the list until find the Node with the index passed
+as argument for the function.
+ 
