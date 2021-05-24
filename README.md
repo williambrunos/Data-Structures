@@ -141,16 +141,22 @@ as in C as in Python. But, what are these ADT's? ADT's are collections of data
 (variables) with a logical connection among them. We store an amount of variables
 and functions in one unique data structure. For these ADT's, the data is encapsuled,
 which means that we can add, remove or even have access to the content of the data
-with functions.
+without calling functions.
+
+We are concerned on the implementation of the functions, not on the "how" they are
+done(specification).
+
+- Specification -> Headers and semantic -> headers of the functions
+- Implementation -> Algorithms -> Encapsuled -> Public Interface
 
 In C, the default method to implement a ADT is:
 
 * Create an archive with .h extension and declare the prototypes of the functions
-of the struct.
+of the struct. -> **Specification**
 
 * Create an archive with .c extension with the same name of the .h and declare
 the struct and construct the functions that had been declared yet in the .h 
-archive.
+archive. -> **Implementation**
 
 * Create an archive with .c extension to implement the structs and functions of
 the other archives.
@@ -161,6 +167,20 @@ access to the functions prototypes. Like this:
 ```C
 #include "name_of_the_archive.h"
 ```
+
+### Advantages for using ADT's:
+
+We can see on our work three main advantages for using these abstract data types:
+
+- Reusing: We just need to compile the implementation of the functions one time
+and reuse it whenever we need.
+
+- Maintenance: If we modify only the **implementation** of the functions, not the
+specification, it will not change the source code that uses this function.
+
+- Abstraction: The implementation of the functions are abstracts, so the user of
+these doesn't need to know every detail of it, just the header and what data pass
+as arguments to see the function acting.
 
 ### Sequency Allocated List:
 
