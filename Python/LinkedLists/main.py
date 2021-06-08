@@ -4,6 +4,6 @@ from linkedList import LinkedList
 lista = LinkedList()
 lista.append(8)
 lista.append(56)
+lista.insert(45, 2)
 
-print(lista[0])
-print(lista.index(5))
+lista.print_list()
