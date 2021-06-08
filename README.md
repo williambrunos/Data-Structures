@@ -122,7 +122,7 @@ printf("**intPtrPtrPtr = %d \n", **intPtrPtrPtr); // &x
 printf("***intPtrPtrPtr = %d \n", ***intPtrPtrPtr); // x
 ```
 
-### Algorithms Complexity
+## Algorithms Complexity
 
 This term, "complexity", is nothing more than the analysis of the resources needed
 by the algorithm to run. This resources are: memory and CPU, as you have known,
@@ -134,7 +134,7 @@ resources of the computer as the length of the input raises.
 * Location complexity => Measure how much memory the algorithm needs
 * Time complexity => Measure how much processing time the algorithm needs.
 
-### Abstract Data Type(ADT)
+## Abstract Data Type(ADT)
 
 On our course of Data Structures, we will have to create our own structs of data,
 as in C as in Python. But, what are these ADT's? ADT's are collections of data
@@ -182,7 +182,7 @@ specification, it will not change the source code that uses this function.
 these doesn't need to know every detail of it, just the header and what data pass
 as arguments to see the function acting.
 
-### Sequency Allocated List:
+## Sequency Allocated List:
 
 Is a common list, declared and created in memory with values in sequencial
 position, accessed by the first one and the data types. In python, as we can
@@ -196,7 +196,7 @@ the others to the left to fill the list => Time Complexity: O(n)
 "pull" the others to the left to fill the list => Time Complexity: O(n)
 
 
-### Linked List
+## Linked List
 
 In a linked list, the data is not sequency allocated in memory, it is scattered
 in the RAM memory. How do these data can have access to each other? Through 
@@ -243,3 +243,27 @@ In this algorithm, at the worst case, we have a O(n) situation. Our variable
 pointer will go trough all the list until find the Node with the index passed
 as argument for the function.
  
+## Stacks
+
+Stacks are data structures which the data are ordered in a stack, with access
+politics being FILO, First In Last Out, which means that the first element added
+at the stack will be the last one to get removed, and the last element added, will
+be the first to be removed.
+
+### Adding elements in a Stack(Push)
+
+In this function, we create a node(like the ones in linked lists), add the
+reference of the second and consequently, to the rest of the stack, for the new
+node created with the value received as parameter. Update the top reference to
+be the new node added a the stack.
+
+### Removing elements in a Stack(Pop)
+
+In this function, we create a pointer(reference) to the top of the stack, make 
+the top of the stack be the next sequencial node, and returns the other reference
+and cleans it from memory.
+
+### Returning the element at the top(Peek)
+
+In this function, we just have to return the data in the node of the top of the
+stack.
