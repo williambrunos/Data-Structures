@@ -12,6 +12,9 @@ int is_empty(Linkedlist* list);
 // Insert a element at the beggining of the list
 Linkedlist* unshift(Linkedlist* list, int value);
 
+/// Insert a ordered element at the list
+Linkedlist* insert_ordered(Linkedlist* list, int value);
+
 // Search for a element in a list
 Linkedlist* search(Linkedlist* list, int value);
 

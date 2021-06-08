@@ -24,6 +24,28 @@ Linkedlist* unshift(Linkedlist* list, int value) {
 	return node;
 }
 
+Linkedlist* insert_ordered(Linkedlist* list, int value) {
+	Linkedlist* lNew = (Linkedlist*) malloc(sizeof(Linkedlist));
+	lNew->data = value;
+	if(list == NULL){
+		lNew->next = NULL;
+		return lNew;
+	}else if(list->data>=value){
+		lNew->next = list;
+		return lNew;
+	}else{
+		Linkedlist* lAnt = list;
+		Linkedlist* lProx = list->next;
+		while(lProx != NULL && lProx -> data<value){
+			lAnt = lProx;
+			lProx = lProx->next;
+		}
+		lAnt->next = lNew;
+		lNew->next = lProx;
+		return list;
+	}
+}
+
 // Searchs for a value into a linked list and returns the position of it at the list
 Linkedlist* search(Linkedlist *list, int value) {
 	int counter = 1;
