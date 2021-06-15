@@ -267,3 +267,12 @@ and cleans it from memory.
 
 In this function, we just have to return the data in the node of the top of the
 stack.
+
+## Queues
+
+Queues are data structures with access politics based on FIFO(First In First Out),
+which means that the first element added at the list will the first one to get
+removed. 
+
+This structure is simple, constructed based on nodes to get more scalability for
+our queue. 
