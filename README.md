@@ -276,3 +276,43 @@ removed.
 
 This structure is simple, constructed based on nodes to get more scalability for
 our queue. 
+
+## Sorting Algorithms
+
+### QuickSort
+
+The quicksort algorithm is based at: managing the algorithm in all the array, sort
+it partially, apply the algorithm at the rest of the array which is not sorted,
+recursively. Continue sorting until the sub array to be sorted has length equal to
+0 or 1.
+
+**Algorithm**
+
+- Step 1:
+
+Choose, arbitrary, a pivot element in the array.
+
+- Step 2:
+
+Declare variables 'a' and 'b', 'a' will be in position of the array which is next
+to(to the right) the pivot, 'b' will be in the last position of the array(v[length-1]).
+
+- Step 3:
+
+Move 'a' forward to the right in the array until the program find an element major
+than the pivot and 'b' backward in the array until the program find an element
+minor or equal to the pivot.
+
+- Step 4:
+
+Once the program have accomplished step 3, hold 'a' and 'b' at their positions,
+if a < b => exchange v[a] and v[b], increment 'a' by 1 and decrement 'b' by -1.
+
+Repeat step 3. 
+
+if a > b => exchange the pivot with v[b]. The value at 'b' now will no longer
+exchange. So, now we have a sub array on the right of 'b' and on left of 'b'.
+
+- Step 5:
+
+Repeat recursively the algorithm for the both sub arrays that had left.
