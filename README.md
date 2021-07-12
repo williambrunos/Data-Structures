@@ -319,4 +319,5 @@ Repeat recursively the algorithm for the both sub arrays that had left.
 
 **Time Complexity**
 
-The time complexity of the QuickSort algorithm is O(nlog(n)).
+The time complexity of the QuickSort algorithm is O(nlog(n)) at the medium case.
+At the worst case(the array is already sorted) the time complexity is O(n²).
