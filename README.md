@@ -312,12 +312,10 @@ Repeat step 3.
 
 if a > b => exchange the pivot with v[b]. The value at 'b' now will no longer
 exchange. So, now we have a sub array on the right of 'b' and on left of 'b'.
-
-- Step 5:
+-Step 5:
 
 Repeat recursively the algorithm for the both sub arrays that had left.
 
 **Time Complexity**
-
 The time complexity of the QuickSort algorithm is O(nlog(n)) at the medium case.
 At the worst case(the array is already sorted) the time complexity is O(n²).
