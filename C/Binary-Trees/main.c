@@ -35,6 +35,7 @@ int main() {
  	
  	printf("------\n");
  	
+	printf("\nARVORE B IMPRESSA POR NIVEIS:\n\n");
  	impressao_arv_niveis(arvA);
 	printf("------\n");
 	
