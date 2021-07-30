@@ -14,17 +14,17 @@ int main() {
 	arvA = arvb_insere(arvA, 2);
 	arvA = arvb_remove(arvA, 4);
 	
-	printf("Qtd de nós dois filhos %d\n", dois_filhos(arvA));
-	printf("Nós igual altura %d\n", nos_igual_altura(arvA));
+	printf("Qtd de nï¿½s dois filhos %d\n", dois_filhos(arvA));
+	printf("Nï¿½s igual altura %d\n", nos_igual_altura(arvA));
 	printf("Folhas: info com 6 div. %d\n", folhas_ndivp(arvA, 6));
 
 	ArvB* arvB = arvb_cria_vazia();
-    arvB = arvb_insere(arvB, 8);
-    arvB = arvb_insere(arvB, 9);
+  arvB = arvb_insere(arvB, 8);
+  arvB = arvb_insere(arvB, 9);
  	arvB = arvb_insere(arvB, 11);
  	
-    ArvB* arvC = arvb_cria_vazia();
-    arvC = arvb_insere(arvC, 9);
+  ArvB* arvC = arvb_cria_vazia();
+  arvC = arvb_insere(arvC, 9);
  	arvC = arvb_insere(arvC, 8);
  	arvC = arvb_insere(arvC, 11);
  	
